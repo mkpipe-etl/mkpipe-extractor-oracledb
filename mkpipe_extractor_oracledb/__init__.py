@@ -1,5 +1,7 @@
 from mkpipe.spark import JdbcExtractor
 
+JAR_PACKAGES = ['com.oracle.database.jdbc:ojdbc11:23.6.0.24.10']
+
 
 class OracledbExtractor(JdbcExtractor, variant='oracledb'):
     driver_name = 'oracle:thin'
